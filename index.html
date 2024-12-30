@@ -1,0 +1,102 @@
+<!doctype html>
+<html class="h-full bg-white scroll-pt-12 scroll-smooth" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Vivek Rao">
+
+    <!-- Primary Meta Tags -->
+    <title>Free Quick Sign App</title>
+    <meta name="title" content="Free Quick Sign App">
+    <meta name="description" content="Free Quick Sign App is a simple and easy to use web application that allows you to create your digital signature within seconds.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://freequicksign.com/">
+    <meta property="og:title" content="Free Quick Sign App">
+    <meta property="og:description" content="Free Quick Sign App is a simple and easy to use web application that allows you to create your digital signature within seconds.">
+    <meta property="og:image" content="https://github.com/aryan-eth/aryan-eth/assets/31454667/01cc1683-2c9c-49c4-8d68-5bb8f21d303f">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://freequicksign.com/">
+    <meta property="twitter:title" content="Free Quick Sign App">
+    <meta property="twitter:description" content="Free Quick Sign App is a simple and easy to use web application that allows you to create your digital signature within seconds.">
+    <meta property="twitter:image" content="https://github.com/aryan-eth/aryan-eth/assets/31454667/01cc1683-2c9c-49c4-8d68-5bb8f21d303f">
+
+    <!-- FAVICON -->
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+
+    <!-- CUSTOM FONT / SPLINE SANS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Spline+Sans+Mono:wght@400;700&family=Spline+Sans:wght@400;500;600;700&display=swap">
+
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="dist/output.css">
+	<script src="dist/script.js"></script>
+</head>
+
+<body class="h-full p-6 max-w-4xl mx-auto">
+	<div class="space-y-12">
+		<div class="pb-12">
+			<h2 class="text-base/7 font-semibold text-gray-900">Free Quick Sign App</h2>
+			<p class="mt-1 text-sm/6 text-gray-600">Free Quick Sign App is a simple and easy to use web application that allows you to create your digital signature within seconds.</p>
+			
+			<div class="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
+			
+				<div class="sm:col-span-2 sm:col-start-1">
+					<label for="text-color" class="block text-sm/6 font-medium text-gray-900">Text Color</label>
+					<div class="mt-2">
+						<input type="color" name="text-color" id="text-color" class="block w-full rounded-md bg-white px-3 py-1.5 h-9 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6">
+					</div>
+				</div>
+		
+				<div class="sm:col-span-2">
+					<label for="background-color" class="block text-sm/6 font-medium text-gray-900">Background Color</label>
+					<div class="mt-2">
+						<input type="color" name="background-color" id="background-color" value="#ffffff" class="block w-full rounded-md bg-white px-3 py-1.5 h-9 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6">
+					</div>
+				</div>
+		
+				<div class="sm:col-span-2">
+					<label for="brush-size" class="block text-sm/6 font-medium text-gray-900">Brush Size</label>
+					<div class="mt-2 grid grid-cols-1">
+						<select id="brush-size" name="brush-size" class="col-start-1 row-start-1 w-full appearance-none rounded-md bg-white py-1.5 pl-3 pr-8 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6">
+							<option value="2" selected >2px</option>
+							<option value="4">4px</option>
+							<option value="8">8px</option>
+							<option value="16">16px</option>
+							<option value="24">24px</option>
+							<option value="32">32px</option>
+							<option value="40">40px</option>
+							<option value="48">48px</option>
+						</select>
+						<svg class="pointer-events-none col-start-1 row-start-1 mr-2 size-5 self-center justify-self-end text-gray-500 sm:size-4" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" data-slot="icon">
+							<path fill-rule="evenodd" d="M4.22 6.22a.75.75 0 0 1 1.06 0L8 8.94l2.72-2.72a.75.75 0 1 1 1.06 1.06l-3.25 3.25a.75.75 0 0 1-1.06 0L4.22 7.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+						</svg>
+					</div>
+				</div>
+
+				<!-- <div class="sm:col-span-2">
+					<label for="brush-size" class="block text-sm/6 font-medium text-gray-900">Brush Size</label>
+					<div class="mt-2 grid grid-cols-1">
+						<input type="range" id="brush-size" min="1" max="20">
+					</div>
+				</div> -->
+			</div>
+			<div class="">
+				<canvas id="canvas-area" style="border: 1px solid #d1d5db;" class="cursor-crosshair my-4" width="845" height="500" ></canvas>
+			</div>
+			<div class="flex justify-around">
+				<button id="clear-button" class="flex w-64 justify-center rounded-md bg-red-600 px-3 py-1.5 text-sm/6 font-semibold text-white shadow-sm hover:bg-red-500 disabled:bg-red-300">Clear</button>
+				<button id="retrive-button" class="flex w-64 justify-center rounded-md bg-yellow-400 px-3 py-1.5 text-sm/6 font-semibold text-white shadow-sm hover:bg-yellow-300 disabled:bg-yellow-300">Retrive Last Saved Signature</button>
+				<button id="save-button" class="flex w-64 justify-center rounded-md bg-green-600 px-3 py-1.5 text-sm/6 font-semibold text-white shadow-sm hover:bg-green-500 disabled:bg-green-300">Save And Download</button>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
